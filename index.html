@@ -1,0 +1,522 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+
+        <!-- nev bar -->
+        <nav >
+            <div class="container ">
+                <div class="row mt-3 mb-3 ">
+
+                    <!-- left side nev bar -->
+                    <div class="col-4">
+                        <img class="nev_logo_image img-fluid" src="./images/logo.png" alt="Logo">
+                    </div>
+    
+                    <!-- right side nev bar -->
+                    <div class="d-flex col-8 align-items-center justify-content-end">
+    
+                        <!-- search input -->
+                        <div class="form-outline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-search"></i>
+                                    </span>
+                                </div>
+                                <input type="search" id="form1" class="form-control" placeholder="Search"
+                                aria-label="Search" />
+                            </div>
+                        </div>
+    
+                        <!-- bookmark svg -->
+                        <div class="m-1">
+                            <button type="button" class="btn btn-light bg-transparent">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                                      </svg>
+                                </span>
+                            </button>
+                            
+                        </div>
+    
+                        <!-- notification bell -->
+                        <div>
+                            <button type="button" class="btn btn-light bg-transparent">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                      </svg>
+                                </span>
+                            </button>
+                            
+                        </div>
+                        
+                        <!-- upgrade button -->
+                        <div class="m-1">
+                            <button type="button" class="btn btn-light bg-transparent border border-dark">Upgrade</button>
+                        </div>
+    
+                        <!-- user icons -->
+                        <div>
+                            <button type="button" class="btn btn-light bg-transparent">
+                                <span>
+                                    <img class="user_image rounded-circle ml-3" src="./images/profile.jpg" alt="profile">
+                                </span>
+                            </button>
+                            
+                        </div>
+                        
+                                    
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav closed -->
+
+        <!-- ================================================================================================== -->
+
+        <!-- upper section  -->
+        <section id = "#upper_card" class="mt-2">
+            <div class="container">
+                <div class="row">
+
+                    <!-- left side  -->
+                    <div class ="col-12 col-md-6 col-lg-4">
+
+                        <!-- left card  -->
+                        <div class="card">
+
+                            <!-- card image  -->
+                            <div>
+                                <img class="card-img-top" src="./images/blog 1.png" alt="Card image cap">
+                            </div>
+
+                            <!-- card body  -->
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <img class="user_image rounded-circle" src="./images/profile.jpg" alt="profile">
+                                    <h6 class="ms-3 m-0">Abdullah in Better Programming</h6>
+                                </div>
+
+                                <h5 class="card-title mt-2">The Essiential Guide To SEO and Web Developer.</h5>
+                                <p class="card-text">The key points of SEO and how to apply them on your website.</p>
+                                <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                          </svg>
+                                    </span>
+                                </small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- upper middle side  -->
+                    <div class ="col-12 col-md-6 col-lg-4">
+                        
+                        <!-- upper middle 1  -->
+                        <div class="container my-2 d-flex flex-row align-items-center px-4 py-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center p-0">
+                                <img class="img-fluid" src="./images/blog 2.png" alt="Card image">
+                            </div>
+                        </div>
+                        
+                        <!-- upper middle 2  -->
+                        <div class="container my-2 d-flex flex-row align-items-center px-4 py-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center p-0">
+                                <img class="img-fluid" src="./images/blog 3.png" alt="Card image">
+                            </div>
+                        </div>
+
+                        <!-- upper middle 3  -->
+                        <div class="container my-2 d-flex flex-row align-items-center px-4 py-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center p-0">
+                                <img class="img-fluid" src="./images/blog 4.png" alt="Card image">
+                            </div>
+                        </div>
+
+                        <!-- upper middle 4  -->
+                        <div class="container my-2 d-flex flex-row align-items-center px-4 py-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center p-0">
+                                <img class="img-fluid" src="./images/blog 5.png" alt="Card image">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- upper right side  -->
+                    <div class ="col-12 col-lg-4 row m-0">  
+                        
+                        <!-- upper right side 6 images  -->
+                        <div class="row g-1 col-6 col-lg-12">
+
+                            <!-- images heading  -->
+                            <div class="col-12 px-4 py-0">
+                                <h6 class="text-dark"><small><b>LATEST FROM THE FOLLOWING</b></small></h6>
+                            </div>
+
+                            <!-- image 1  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 1.png" alt="Card image">
+                            </div>
+
+                            <!-- image 2  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 2.png" alt="Card image">
+                            </div>
+
+                            <!-- image 3  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 3.png" alt="Card image">
+                            </div>
+
+                            <!-- image 4  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 1.png" alt="Card image">
+                            </div>
+
+                            <!-- image 5  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 2.png" alt="Card image">
+                            </div>
+
+                            <!-- image 6  -->
+                            <div class="col-6 col-md-4 p-4">
+                                <img class="card-img" src="./images/latest 3.png" alt="Card image">
+                            </div>
+
+                            <!-- lower text  -->
+                            <div class="col-12 px-4 py-0 fw-bold">
+                                <span class="text-success"> <small>All from the following</small> </span>
+                            </div>
+                        </div>
+
+                        <!-- upper right side lower portion  -->
+                        <div class="row mt-0 mt-lg-5 g-1 col-6 col-lg-12">
+
+                            <!-- heading  -->
+                            <div class="col-12 px-4 py-0">
+                                <h6 class="text-dark"><small><b>TOPICS TO FOLLOW</b></small></h6>
+                            </div>
+
+                            <!-- lower portion 1  -->
+                            <div class="col-12 px-4 px-0 py-3 border-bottom d-flex align-items-center justify-content-between">
+                                <span class="fw-bold">Coronavirus</span>
+                                <button class="btn btn-outline-success">Follow</button>
+                            </div>
+
+                            <!-- lower portion 2  -->
+                            <div class="col-12 px-4 px-0 py-3 border-bottom d-flex align-items-center justify-content-between">
+                                <span class="fw-bold">Software Engineering</span>
+                                <button class="btn btn-outline-success">Follow</button>
+                            </div>
+
+                            <!-- lower portion 3  -->
+                            <div class="col-12 px-4 px-0 py-3 border-bottom d-flex align-items-center justify-content-between">
+                                <span class="fw-bold">Lifestyle</span>
+                                <button class="btn btn-outline-success">Follow</button>
+                            </div>
+
+                            <!-- lower portion 4  -->
+                            <div class="col-12 px-4 py-3 fw-bold d-flex align-items-center">
+                                <span class="text-success"> <small>Show more</small> </span>
+                            </div>
+                        </div>   
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <!-- upper section end  -->
+
+
+        <!-- =================================================================================================== -->
+        
+        <!-- lower section  -->
+        <section id="#lower_card" class="mt-2">
+            <div class="container m-auto row border border-dark">
+
+                <!-- lower left side -->
+                <div class="col-12 col-md-8">
+
+                    <!-- lower left side 1 -->
+                    <div class="container-fluid my-2 d-flex flex-row justify-content-between align-items-center px-4 py-2">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex align-items-center flex-row">
+                                    <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                    <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                    <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </small></p>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-0">
+                            <img class="img-fluid" src="./images/blog 6.png" alt="Card image">
+                        </div>
+                    </div>
+
+                    <!-- lower left side 2  -->
+                    <div class="container-fluid my-2 d-flex flex-row justify-content-between align-items-center px-4 py-2">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex align-items-center flex-row">
+                                    <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                    <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                    <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </small></p>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-0">
+                            <img class="img-fluid" src="./images/blog 7.png" alt="Card image">
+                        </div>
+                    </div>
+
+                    <!-- lower left side 3  -->
+                    <div class="container-fluid my-2 d-flex flex-row justify-content-between align-items-center px-4 py-2">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex align-items-center flex-row">
+                                    <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                    <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                    <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </small></p>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-0">
+                            <img class="img-fluid" src="./images/blog 8.png" alt="Card image">
+                        </div>
+                    </div>
+
+                    <!-- lower left side 4  -->
+                    <div class="container-fluid my-2 d-flex flex-row justify-content-between align-items-center px-4 py-2">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex align-items-center flex-row">
+                                    <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                    <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                    <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </small></p>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-0">
+                            <img class="img-fluid" src="./images/blog 6.png" alt="Card image">
+                        </div>
+                    </div>
+
+                    lower side 5
+                    <div class="container-fluid my-2 d-flex flex-row justify-content-between align-items-center px-4 py-2">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="d-flex align-items-center flex-row">
+                                    <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                    <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                </div>
+
+                                <div>
+                                    <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                    <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                            </svg>
+                                        </span>
+                                    </small></p>
+                                </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center p-0">
+                            <img class="img-fluid" src="./images/blog 7.png" alt="Card image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- lower right side -->
+                <div class="col-12 col-md-4">
+                    <div class="container p-4 d-flex flex-column lower-right-side-bg">
+
+                        <!-- lower right side heading  -->
+                        <div class="d-flex flex-row align-items-center">
+                            <i class="bi bi-bookmark"></i>
+                            <span class="fs-6 fw-bold ms-2">READING LIST</span>
+                        </div>
+
+                        <!-- lower right side 1  -->
+                        <div class="container-fluid border border-danger d-flex flex-row justify-content-between align-items-center p-0 py-1 my-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+    
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- lower right side 2  -->
+                        <div class="container-fluid border border-danger d-flex flex-row justify-content-between align-items-center p-0 py-1 my-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+    
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- lower right side 3  -->
+                        <div class="container-fluid border border-danger d-flex flex-row justify-content-between align-items-center p-0 py-1 my-2">
+                            <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center flex-row">
+                                        <img class="user_image rounded-circle me-1" src="./images/profile.jpg" alt="profile">
+                                        <span class="ms-2 m-0 d-inline h6">Abdullah</span>
+                                    </div>
+    
+                                    <div>
+                                        <h6 class="card-title mt-2">One Plus Has A Mode Phone, Released Officially</h6>
+                                        <p class="card-text"><small class="text-muted">Read More. 8 min read
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                                </svg>
+                                            </span>
+                                        </small></p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- lower right side end text  -->
+                        <div class="col-12 my-4 py-0 fw-bold">
+                            <span class="text-success"> <small>See your full reading list</small> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- lower section end  -->
+
+
+    </body>
+</html>

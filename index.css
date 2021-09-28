@@ -1,0 +1,21 @@
+.nev_logo_image{
+    height: inherit;
+}
+
+.user_image{
+    width: 35px;
+    height: 35px;
+}
+
+#upper_card{
+    display: none;
+}
+
+.top-middile-card{
+    width: 20px;
+    height: 50px;
+}
+
+.lower-right-side-bg{
+    background-color: #f2f2f2;
+}
