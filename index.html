@@ -21,14 +21,23 @@
                     <!-- right side nev bar -->
                     <div class="d-flex col-8 align-items-center justify-content-end">
     
-                        <!-- search input -->
-                        <div>
+                        <!-- search input for desktop and tablet-->
+                        <div class="d-none d-md-block">
                             <span class="position-absolute d-block z-2 pt-2 pb-2 text-center fa fa-search">
                                 <i class="bi bi-search m-1"></i>
                             </span>
                             <input type="text" class="form-control" placeholder="   Search Medium">
                         </div>
-    
+
+                        <!-- search for mobile view -->
+                        <div class="d-md-none">
+                            <button type="button" class="btn bg-transparent">
+                                <span>
+                                    <i class="bi bi-search m-1"></i>
+                                </span>
+                            </button>
+                        </div>
+
                         <!-- bookmark svg -->
                         <div class="m-1">
                             <button type="button" class="btn bg-transparent">
@@ -269,7 +278,7 @@
 
                             <!-- lower portion 3  -->
                             <div class="col-12 px-4 px-0 py-3 border-bottom d-flex align-items-center justify-content-between">
-                                <span class="fw-bold">Lifestyle</span>
+                                <span class="fw-bold">Software Engineering</span>
                                 <button class="btn btn-outline-success">Follow</button>
                             </div>
 
@@ -406,7 +415,7 @@
                 </div>
 
                 <!-- lower right side -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-3">
                     <div class="container p-4 d-flex flex-column lower-right-side-bg">
 
                         <!-- lower right side heading  -->
